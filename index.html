@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TeeHee!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="teehee.js"></script>
+  </head>
+  <body>
+    <audio controls id="linkAudio" style="display: none">
+    <source src="wannagethigh.mp3" type="audio/mpeg">
+      You suck dude, no audio for you.
+    </audio>
+  </body>
+  <script type="text/javascript">
+    window.addEventListener("click", function() {
+      var snd = document.getElementById('linkAudio');
+      snd.play();
+    });
+  </script>
+</html>
