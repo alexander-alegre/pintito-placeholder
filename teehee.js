@@ -21,6 +21,9 @@ function setup() {
 
 function draw() {
   let randomNumber = randomIntFromInterval(0, 7);
+  let display = touches.length + ' touches';
+  text(display, 5, 10);
+
   if (mouseIsPressed) {
     fill(colors[randomNumber]);
   } else {
