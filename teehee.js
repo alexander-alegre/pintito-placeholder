@@ -26,8 +26,12 @@ function draw() {
 
   if (mouseIsPressed) {
     fill(colors[randomNumber]);
+    text('TEEHEE!!!', randomIntFromInterval(0, window.innerWidth), randomIntFromInterval(0, window.innerHeight));
   } else {
     fill(colors[randomNumber]);
   }
   ellipse(mouseX, mouseY, 80, 80);
+}
+
+function touchStarted() {
 }
