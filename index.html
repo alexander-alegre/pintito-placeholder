@@ -15,8 +15,11 @@
     </audio>
   </body>
   <script type="text/javascript">
+    var snd = document.getElementById('linkAudio');
     window.addEventListener("click", function() {
-      var snd = document.getElementById('linkAudio');
+      snd.play();
+    });
+    window.addEventListener('touchstart', function() {
       snd.play();
     });
   </script>
